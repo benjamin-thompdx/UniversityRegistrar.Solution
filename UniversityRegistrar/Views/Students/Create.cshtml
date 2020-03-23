@@ -8,8 +8,8 @@
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.StudentName)
-    @Html.TextBoxFor(model => model.StudentName)
+    @Html.LabelFor(model => model.StudentName, new { @class="mdl-textfield__label" })
+    @Html.TextBoxFor(model => model.StudentName, new { @class="mdl-textfield__input", @required="true"  })
 
     @Html.LabelFor(model => model.EnrollmentDate)
     @Html.EditorFor(model => model.EnrollmentDate)
