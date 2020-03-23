@@ -14,6 +14,7 @@
 }
 else
 {
+  <h4>Enrollment Date: @Html.DisplayFor(model => model.EnrollmentDate)</h4>
   <h4>Courses the Student belongs to:</h4>
   <ul>
   @foreach(var join in Model.Courses)
